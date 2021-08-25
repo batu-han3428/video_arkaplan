@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/* body sıfırlama */
+body {margin:0; padding:0;}
+/* /body sıfırlama */
+
+/* arka plan */
+#hero {
+  position:relative;
+}
+
+#hero video {
+  height:100vh;
+  width:100%;
+  background-position:absolute;
+  z-index:10;
+  object-fit:cover;
+}
+
+#hero .content{
+  background:rgba(0,0,0,0.5);
+  height:100%;
+  width:100%;
+  z-index:20;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+/* /arka plan */
+
+.yaziAlan{
+
+  width:100%;
+
+}
+
+/* üst menü */
+.btn-group{
+  z-index: 55;
+}
+
+.btn-group button{
+  background: transparent;
+  color:white;
+  padding:20px;
+}
+
+.btn-group button:hover{
+  background: rgb(67, 73, 85);
+}
+
+/* /üst menü */
+
+/* üst container */
+.ustContainer{
+    display:flex;
+    justify-content:space-between;
+}
+/* /üst container */
+
+/* Sosyal Medya */
+.sosyalMedyaAnaDiv{
+    display:flex;
+}
+
+.sosyalMedyaAnaDiv > div{
+    z-index:70;
+    padding:20px;
+}
+
+.sosyalMedyaAnaDiv > div > i{
+    font-size:15px;
+    color:white;
+    cursor:pointer;
+}
+
+.sosyalMedyaAnaDiv > div > i:hover{
+    color:rgb(219, 212, 212);
+}
+/* /Sosyal Medya*/
+
+/* Başlık */
+.baslikContainer{
+  position: absolute; 
+  top:40%;
+  width:100%;
+}
+
+.baslik{
+  color:white;
+  font-family: Segoe Print;
+}
+
+.baslikAlan{
+  border-bottom: 2px groove white;
+  width:41%;
+  margin:0 auto;
+}
+
+/* /Başlık */
+
+
+/* Paragraf */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+.animation_text {
+  text-align: center; 
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px; 
+  font-weight: 500; 
+  line-height: 50px; 
+  letter-spacing: 3px;
+  width: 50%;
+  margin:0 auto;
+}
+.animation_text span{color:white;}
+@media(max-width:768px){
+  .animation_text {font-size:10px}
+}
+
+.devamAlan{
+  width: 50%; 
+  margin:0 auto; 
+  text-align: center;
+}
+
+.devamAlan > span{
+  color:white;
+  cursor: pointer;
+  font-size: 20px; 
+}
+/* /Paragraf*/
+
+/* devamını oku */
+.contentt{
+  margin:0 auto;
+  width:50%;
+  text-align: center;
+  display:none;
+}
+
+.contentt span {
+  width: 10px;
+  display: inline-block;
+  color:white;
+  letter-spacing: 1px !important;
+}
+/* /devamını oku*/
