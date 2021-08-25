@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+@media (max-width: 400px) {
+    /* üst container */
+    .ustContainer{
+        flex-wrap:wrap;
+    }
+    /* /üst container */
+
+    /* sosyal medya */
+    .sosyalMedyaAnaDiv > div{
+        padding:15px;
+    }
+    .sosyalMedyaAnaDiv > div > i{
+        font-size:10px;    
+    }
+    /* /sosyal medya */
+
+    /* ses span */
+    .sesSpan{
+        left:90%;
+        top:-30px; 
+        padding:5px;
+    }
+
+    .sesIcon{
+        font-size: 15px;
+    }
+    /* /ses span */
+
+    /* Başlık */
+    .baslikContainer{
+        top:30%;
+    }
+
+    .baslikAlan{
+        width:100%;
+    }
+
+    .baslik{
+        font-size:22px;
+    }
+    /* /Başlık */
+
+    /* Paragraf */
+    .animation_text {
+        font-size: 15px; 
+        line-height: 40px; 
+        width: 100%;
+    }
+    /* /Paragraf */
+
+    /* devamını oku*/
+    .random{
+        font-size:10px;
+    }
+    /* /devamını oku*/
+}
+@media (min-width:400px) and (max-width: 499px) {
+    /* üst container */
+ .ustContainer{
+    flex-wrap:wrap;
+}
+/* /üst container */
+
+/* sosyal medya */
+.sosyalMedyaAnaDiv > div{
+    padding:15px;
+}
+.sosyalMedyaAnaDiv > div > i{
+    font-size:10px;    
+}
+/* /sosyal medya */
+
+/* ses span */
+.sesSpan{
+    left:90%;
+    top:-30px; 
+    padding:5px;
+}
+
+.sesIcon{
+    font-size: 15px;
+}
+/* /ses span */
+
+/* Başlık */
+.baslikContainer{
+    top:30%;
+}
+
+.baslikAlan{
+    width:60%;
+   
+}
+
+.baslik{
+    font-size:15px;
+}
+/* /Başlık */
+
+/* Paragraf */
+.animation_text {
+    font-size: 15px; 
+    line-height: 40px; 
+    width: 100%;
+}
+/* /Paragraf */
+
+/* devamını oku*/
+.random{
+    font-size:10px;
+}
+/* /devamını oku*/
+}
+@media (min-width:500px) and (max-width: 575px) {
+    /* üst container */
+ .ustContainer{
+    flex-wrap:wrap;
+}
+/* /üst container */
+
+/* sosyal medya */
+.sosyalMedyaAnaDiv > div{
+    padding:15px;
+}
+.sosyalMedyaAnaDiv > div > i{
+    font-size:10px;    
+}
+/* /sosyal medya */
+
+/* ses span */
+.sesSpan{
+    left:90%;
+    top:-30px; 
+    padding:5px;
+}
+
+.sesIcon{
+    font-size: 15px;
+}
+/* /ses span */
+
+/* Başlık */
+.baslikContainer{
+    top:30%;
+}
+
+.baslikAlan{
+    width:60%;
+
+}
+
+.baslik{
+    font-size:19px;
+}
+/* /Başlık */
+
+/* Paragraf */
+.animation_text {
+    font-size: 15px; 
+    line-height: 40px; 
+    width: 100%;
+}
+/* /Paragraf */
+
+/* devamını oku*/
+.random{
+    font-size:10px;
+}
+/* /devamını oku*/
+}
+@media (min-width: 576px) and (max-width:767px) {
+    /* üst container */
+ .ustContainer{
+    flex-wrap:wrap;
+}
+/* /üst container */
+
+/* ses span */
+.sesSpan{
+    left:95%;
+    top:-30px; 
+    padding:5px;
+}
+
+.sesIcon{
+    font-size: 20px;
+}
+/* /ses span */
+
+/* Başlık */
+.baslikContainer{
+    top:30%;
+    width:100%;
+}
+
+.baslikAlan{
+    width:65%;
+
+}
+
+.baslik{
+    font-size:24px;
+}
+/* /Başlık */
+
+/* Paragraf */
+.animation_text {
+    font-size: 17px; 
+    width: 85%;
+}
+/* /Paragraf */
+
+/* devamını oku*/
+.random{
+    font-size:15px;
+}
+/* /devamını oku*/
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* üst container */
+ .ustContainer{
+    flex-wrap:wrap;
+}
+/* /üst container */
+
+/* ses span */
+.sesSpan{
+    left:95%;
+    top:-30px; 
+    padding:5px;
+}
+
+.sesIcon{
+    font-size: 20px;
+}
+/* /ses span */
+
+/* Başlık */
+.baslikContainer{
+    top:30%;
+    width:100%;
+}
+
+.baslikAlan{
+    width:65%;
+
+}
+/* /Başlık */
+
+/* Paragraf */
+.animation_text {
+    font-size: 17px; 
+    width: 85%;
+}
+/* /Paragraf */
+
+/* devamını oku*/
+.random{
+    font-size:15px;
+}
+/* /devamını oku*/
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/* ses span */
+.sesSpan{
+    left:95%;
+    top:-30px; 
+    padding:5px;
+}
+
+.sesIcon{
+    font-size: 20px;
+}
+/* /ses span */
+
+/* Başlık */
+.baslikContainer{
+    top:30%;
+}
+
+.baslikAlan{
+    width:55%;
+
+}
+/* /Başlık */
+}
+@media (min-width: 1200px) and (max-width:1291px){
+    /* ses span */
+.sesSpan{
+    left:95%;
+    top:-30px; 
+    padding:5px;
+}
+
+.sesIcon{
+    font-size: 20px;
+}
+/* /ses span */
+
+/* Başlık */
+
+.baslikAlan{
+    width:55%;
+}
+/* /Başlık */
+}
+@media (min-width: 1500px) and (max-width:1700px) {
+/* ses span */
+    .sesSpan{
+        left:95%;
+        top:-30px; 
+    }
+/* /ses span */
+
+/* Başlık */
+.baslikAlan{
+    width:45%;
+}
+
+.baslik{
+    font-size:45px;
+}
+/* /Başlık */
+
+/* Paragraf */
+.animation_text {
+    font-size: 25px; 
+    line-height: 50px; 
+    width: 60%;
+}
+/* /Paragraf */
+
+}
+@media (min-width: 1701px) and (max-width:1920px) {
+   
+    /* Başlık */
+    .baslik{
+        font-size:60px;
+    }
+    /* /Başlık */
+    
+    /* Paragraf */
+    .animation_text {
+        font-size: 30px; 
+        line-height: 60px; 
+        width: 60%;
+    }
+    /* /Paragraf */
+    
+    /* devamını oku*/
+    .random{
+        font-size:20px;
+    }
+
+    .contentt span {
+        width:15px;
+        display: inline-block;
+        letter-spacing: 1px !important;
+      }
+    /* /devamını oku*/
+    }

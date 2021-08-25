@@ -1,3 +1,23 @@
+var daktilo = new Audio('/anasayfa/anasayfa_ses/daktilo2.mp3');
+daktilo.loop=true;
+var sesKontrolAudio = 0;
+
+$(".sesSpan").click(function(){
+
+  if(sesKontrolAudio == 0){
+    
+    $(this).find("i").removeClass("bi bi-volume-mute-fill");
+    $(this).find("i").addClass("bi bi-volume-up-fill");
+    sesKontrolAudio = 1;
+  }else if(sesKontrolAudio == 1){
+    daktilo.pause();
+    $(this).find("i").removeClass("bi bi-volume-up-fill");
+    $(this).find("i").addClass("bi bi-volume-mute-fill");
+    sesKontrolAudio = 0;
+  }
+
+});
+
 var Text = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -17,9 +37,14 @@ var kontrol = 0;
     if (this.isDeleting) {
       if(kontrol != 2){
         this.txt = fullTxt.substring(0, this.txt.length - 1);
+        daktilo.pause();
       }
+      daktilo.pause();
     } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      if(sesKontrolAudio == 1){
+        daktilo.play(); 
+      }
+     this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
   
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
@@ -33,12 +58,16 @@ var kontrol = 0;
       delta = this.period;
       this.isDeleting = true;
       kontrol++;
+      setTimeout(function() {
+        daktilo.pause();
+      }, 250);
+     
     } else if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
       this.loopNum++;
       delta = 500;
     }
-  
+   
     setTimeout(function() {
       that.tick();
     }, delta);

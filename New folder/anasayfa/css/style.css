@@ -47,7 +47,7 @@ body {margin:0; padding:0;}
 }
 
 .btn-group button:hover{
-  background: rgb(67, 73, 85);
+  background: linear-gradient(170deg, rgb(67, 73, 85),rgb(119, 57, 57), rgb(67, 73, 85));
 }
 
 /* /üst menü */
@@ -88,14 +88,19 @@ body {margin:0; padding:0;}
 }
 
 .baslik{
-  color:white;
+  cursor:default;
   font-family: Segoe Print;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .baslikAlan{
   border-bottom: 2px groove white;
-  width:41%;
+  width:45%;
   margin:0 auto;
+  position:relative;
+  text-align: center;
 }
 
 /* /Başlık */
@@ -103,6 +108,7 @@ body {margin:0; padding:0;}
 
 /* Paragraf */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 .animation_text {
   text-align: center; 
   font-family: "Poppins", Sans-serif;
@@ -112,22 +118,13 @@ body {margin:0; padding:0;}
   letter-spacing: 3px;
   width: 50%;
   margin:0 auto;
-}
-.animation_text span{color:white;}
-@media(max-width:768px){
-  .animation_text {font-size:10px}
+  cursor:default;
 }
 
-.devamAlan{
-  width: 50%; 
-  margin:0 auto; 
-  text-align: center;
-}
-
-.devamAlan > span{
-  color:white;
-  cursor: pointer;
-  font-size: 20px; 
+.animation_text span{
+  background: -webkit-linear-gradient(70deg, rgb(104, 0, 0) 0%, rgb(158, 44, 44) 40%,#eee 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* /Paragraf*/
 
@@ -139,10 +136,55 @@ body {margin:0; padding:0;}
   display:none;
 }
 
+.random{
+  display:inline-block;
+  cursor:pointer;
+  font-family:papyrus;
+  font-weight: 600;
+  color:white;
+}
+
+.random:hover span{
+  color:rgb(104, 0, 0);  
+  transition:1s color;
+}
+
 .contentt span {
   width: 10px;
   display: inline-block;
-  color:white;
   letter-spacing: 1px !important;
 }
 /* /devamını oku*/
+
+/* ses span */
+.sesSpan{
+  position:absolute; 
+  left:100%; 
+  top:-30px; 
+  color:white;
+  padding:7px;
+  cursor:pointer;
+}
+
+.animasyon{
+  animation: zipla 1s ease;
+}
+
+@keyframes zipla {
+  0% {transform:translateY(0);}
+  25% {transform:translateY(-25px);}
+  50%{transform:translateY(0);}
+  75% {transform:translateY(-25px);}
+  100%{transform:translateY(0);}
+}
+
+.sesIcon{
+  font-size: 25px;
+}
+
+.sesSpan:hover{
+  border:1px rgb(33, 37, 41) solid;
+  background:rgb(47, 52, 56) !important;
+  color:white;
+}
+/* /ses span*/
