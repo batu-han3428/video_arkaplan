@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 /* body sıfırlama */
-body {margin:0; padding:0;}
+html, body {margin:0; padding:0; height: 100%;}
 /* /body sıfırlama */
 
 /* arka plan */
 #hero {
   position:relative;
+  height: 100%;
 }
 
 #hero video {
@@ -26,14 +27,7 @@ body {margin:0; padding:0;}
   top:0;
   left:0;
 }
-
 /* /arka plan */
-
-.yaziAlan{
-
-  width:100%;
-
-}
 
 /* üst menü */
 .btn-group{
@@ -81,6 +75,10 @@ body {margin:0; padding:0;}
 /* /Sosyal Medya*/
 
 /* Başlık */
+.yaziAlan{
+  width:100%;
+}
+
 .baslikContainer{
   position: absolute; 
   top:40%;
@@ -188,3 +186,72 @@ body {margin:0; padding:0;}
   color:white;
 }
 /* /ses span*/
+
+/* Anasayfa Logo ve Yazi */
+.logoSutun{
+  background: linear-gradient(rgb(67, 73, 85),rgb(119, 57, 57), rgb(67, 73, 85));
+  padding:100px 75px;
+  display:flex;
+  border-top:10px solid;
+  border-image: linear-gradient(to left, rgb(241, 243, 247),rgb(119, 57, 57), rgb(67, 73, 85)) 30;
+}
+
+.logoSutunDivBorderBottom{
+  border-top:10px solid;
+  border-image: linear-gradient(to right, rgb(241, 243, 247),rgb(119, 57, 57), rgb(67, 73, 85)) 30;
+}
+
+.logoAlanDiv{
+  width: 10%;
+}
+ 
+.anasayfaLogo{
+  width:100%;
+  transition:1s transform;
+  cursor:pointer;
+  border-radius: 50%;
+}
+
+.anasayfaLogo:hover{
+  transform:scale(1.1);
+  box-shadow: 0 0 10px 0.25rem rgb(157, 163, 173) !important;
+}
+
+.logoYaziAlan{
+  width:50%;
+}
+
+.logoYaziYaziAlan{
+  text-align: center; 
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px; 
+  font-weight: 500; 
+  line-height: 50px; 
+  letter-spacing: 3px;
+  width: 100%;
+  cursor:default;
+}
+
+.logoYaziYaziAlan p{
+  background: -webkit-linear-gradient(70deg, rgb(104, 0, 0) 0%, rgb(158, 44, 44) 40%,#eee 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logoYaziBaslikAlan{
+  width:100%;
+  text-align: center;
+}
+
+.logoYaziBaslik{
+  cursor:default;
+  font-family: Segoe Print;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logoYaziBaslik:hover{
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+/* /Anasayfa Logo ve Yazi*/

@@ -11,9 +11,7 @@ setInterval(function(){
 },4000);
 
 $(".sesSpan").hover(i,o); 
-//ilk parametre seçili tagın üzerine geldiğinde çalışıyor
-//ikincisi ise çıktığında
-   
+
 function i(){
     $(".sesSpan").removeClass("animasyon");
     animasyonKontrol = 2;

@@ -18,6 +18,8 @@ $(".sesSpan").click(function(){
 
 });
 
+
+
 var Text = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
