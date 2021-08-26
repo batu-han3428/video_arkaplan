@@ -20,7 +20,6 @@ sr.reveal(".yaziAlan",{
     rotate:{x:40, y:40, z:300}
 });
 
-
-sr.reveal(".logoAlanDiv, .logoYaziAlan, .btn-group > button, .yaziAlan, .sosyalMedyaAnaDiv > div",{ 
+sr.reveal(".logoAlanDiv, .logoYaziAlan, .btn-group > button, .sosyalMedyaAnaDiv > div",{ 
     reset: true 
 });

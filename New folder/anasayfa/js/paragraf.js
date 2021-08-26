@@ -5,7 +5,7 @@ var sesKontrolAudio = 0;
 $(".sesSpan").click(function(){
 
   if(sesKontrolAudio == 0){
-    
+    daktilo.play(); 
     $(this).find("i").removeClass("bi bi-volume-mute-fill");
     $(this).find("i").addClass("bi bi-volume-up-fill");
     sesKontrolAudio = 1;
