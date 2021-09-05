@@ -8,7 +8,7 @@ SmoothScroll({
     accelerationDelta: 50,
     accelerationMax: 0,//+
     keyboardSupport: 1,
-    arrowScroll: 50,
+    arrowScroll: 0,
     fixedBackground: 0
 });
 
